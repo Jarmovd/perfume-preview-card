@@ -1,0 +1,141 @@
+/* file import */
+@font-face {
+  font-family: "Fraunces";
+  src: url(../fonts/fraunces/Fraunces-VariableFont.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/montserrat/Montserrat-VariableFont_wght.ttf);
+}
+.perfume {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (min-width: 435px) {
+  .perfume {
+    flex-direction: row;
+    max-width: 600px;
+  }
+}
+.perfume img.desktop {
+  display: none;
+}
+@media (min-width: 435px) {
+  .perfume img.desktop {
+    display: block;
+    width: 50%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.perfume img.mobile {
+  height: 100%;
+  width: 100%;
+  max-height: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+@media (min-width: 435px) {
+  .perfume img.mobile {
+    display: none;
+  }
+}
+.perfume_content {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (min-width: 435px) {
+  .perfume_content {
+    width: 50%;
+    padding: 30px;
+    gap: 30px;
+  }
+}
+.perfume_content_tag {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.perfume_content h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+  line-height: 1;
+  color: hsl(212, 21%, 14%);
+  font-size: 30px;
+}
+.perfume_content p {
+  line-height: 1.5;
+}
+.perfume_content_price {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.perfume_content_price_deal {
+  color: hsl(158, 36%, 37%);
+  font-size: 30px;
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+}
+.perfume_content_price_no-deal {
+  text-decoration: line-through;
+}
+.perfume_content_button {
+  display: block;
+  border: none;
+  border-radius: 8px;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+@media (min-width: 435px) {
+  .perfume_content_button {
+    gap: 10px;
+  }
+}
+.perfume_content_button span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  background-color: hsl(30, 38%, 92%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+body main {
+  padding: 40px 20px;
+}
+@media (max-width: 435px) {
+  body main {
+    padding: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

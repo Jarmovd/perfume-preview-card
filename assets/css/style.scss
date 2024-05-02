@@ -1,0 +1,31 @@
+/* file import */
+@import "font";
+@import "variables";
+@import "mixins";
+@import "perfume";
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-montserrat;
+  color: $dark-grayish-blue;
+  background-color: $cream;
+  min-height: 100vh;
+  @include flex-center();
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+
+  main {
+    padding: 40px 20px;
+
+    @media (max-width: $mobile) {
+      padding: 10px;
+    }
+  }
+}
