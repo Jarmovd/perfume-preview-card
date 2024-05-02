@@ -72,6 +72,11 @@
   color: hsl(212, 21%, 14%);
   font-size: 30px;
 }
+@media (min-width: 435px) {
+  .perfume_content h1 {
+    font-size: 32px;
+  }
+}
 .perfume_content p {
   line-height: 1.5;
 }
@@ -101,6 +106,10 @@
   align-items: center;
   justify-content: center;
   gap: 5px;
+}
+.perfume_content_button:hover {
+  background-color: hsl(158, 38%, 21%);
+  cursor: pointer;
 }
 @media (min-width: 435px) {
   .perfume_content_button {

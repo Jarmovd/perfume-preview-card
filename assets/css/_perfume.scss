@@ -57,6 +57,10 @@
       line-height: 1;
       color: $very-dark-blue;
       font-size: 30px;
+
+      @media (min-width: $mobile) {
+        font-size: 32px;
+      }
     }
 
     p {
@@ -91,6 +95,11 @@
       align-items: center;
       justify-content: center;
       gap: 5px;
+
+      &:hover {
+        background-color: $dark-cyan-hover;
+        cursor: pointer;
+      }
 
       @media (min-width: $mobile) {
         gap: 10px;
